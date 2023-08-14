@@ -7,8 +7,14 @@
 
 <body>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
-  <%= @answer %>
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+  <div class="text-center mb-3">
+    <%= @answer %>
+  </div>
+  <div class="text-center">
+      <!--  <%= link_to "Go Back", ask_path %> --> 
+    <%= button_to "Go Back", ask_path, method: :get, class: "btn btn-primary" %>
+  </div>
 </div>
 
 </body>
